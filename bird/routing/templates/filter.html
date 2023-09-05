@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ ip_type }} Filter for {{ asn }}</title>
+</head>
+<body>
+    <h1>{{ ip_type }} Filter for {{ asn }}</h1>
+    <p>NODE ID: {{ node_id }}</p>
+    <h2>Filter Content:</h2>
+    <pre>
+        {{ "\n".join(filter_content) }}
+    </pre>
+    <a href="/">Return to Home</a>
+</body>
+</html>

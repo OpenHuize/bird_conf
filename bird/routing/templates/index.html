@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HUICAST TELECOM ROUTE FILTERING HOME</title>
+</head>
+<body>
+    <h1>HUICAST TELECOM ROUTE FILTERING HOME</h1>
+    <p>NODE ID: {{ node_id }}</p>
+    <form method="post" action="/submit">
+        <label for="asn">Enter ASN (e.g., AS208753):</label>
+        <input type="text" id="asn" name="asn" pattern="^AS\d+$" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

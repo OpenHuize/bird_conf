@@ -61,8 +61,11 @@ protocol bgp D_AS00000_v6 from tpl_bgp {
 ``` ibgp_import(int bgp_med_ping; int extra_bgp_med; int prepend_num) ```
 
 bgp_med_ping: 两个iBGP节点之间的隧道的延迟
+
 extra_bgp_med: 额外增加bgp_med，如打算给特定节点降低优先级
+
 新的bgp_med  = 原bgp_med + bgp_med_ping + extra_bgp_med，bgp_med越低优先级越高。应此，bgp_med可以实现选定到指定路由的最小延迟路径。
+
 prepend_num: ibgp导入时prepend本地asn的次数，如本机不支持非对称路由可能会造成问题。
 
 ## ibgp_export 参数解释(v1.3+):

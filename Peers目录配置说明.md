@@ -76,7 +76,9 @@ prepend_num：导出时prepend次数
 ## Huicast和Huize节点的互联
 由于路由表的识别是通过bgp community来实现的，不同ASN会造成bgp community不统一。因此，AS61302和AS60539节点直接的iBGP需要进行转义。
 
-路由表务必需要选定table bgp_v4/bgp_v6，将路由导入到主表可能会导致服务器失联。
+路由表务必需要选定table bgp_v4/bgp_v6，将路由导入到主表可能会导致服务器失联。 
+
+注：下列示范并非为最新版。部署时，请使用Inter_connect_huize_huicast目录下的版本。
 
 ```
 #AS60539节点这边的配置
